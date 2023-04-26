@@ -41,4 +41,10 @@ public class MemoryController {
         }
         return "oom";
     }
+
+    @RequestMapping("/exit")
+    public String exit() throws Exception {
+        System.exit(0);
+        return "oom";
+    }
 }
